@@ -38,11 +38,11 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Install the packages used by `main2.py`:
+Install the packages listed in `requirement.txt`:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install "fastapi" "uvicorn[standard]" "python-multipart" "PyJWT" "pwdlib[argon2]" "email-validator"
+python -m pip install -r requirement.txt
 ```
 
 ## Run the API
